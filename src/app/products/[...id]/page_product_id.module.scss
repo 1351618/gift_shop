@@ -1,0 +1,24 @@
+@import "../../../general_styles/variables.scss";
+.page-productId {
+  flex-grow: 1;
+  width: $max-content-width;
+}
+
+.sect-gallery-short-descript {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+.gallery {
+  border: 2px solid #eeff00;
+  max-width: 600px;
+  max-height: 500px;
+  img {
+    height: 100%;
+  }
+}
+.short-descript {
+  border: 2px solid #eeff00;
+  flex-grow: 1;
+}

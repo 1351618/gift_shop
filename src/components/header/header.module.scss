@@ -1,0 +1,14 @@
+.header {
+  background-color: #f7f3be;
+  padding: 10px;
+  height: 100px;
+  // position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.posBtnThem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

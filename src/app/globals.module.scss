@@ -1,0 +1,41 @@
+@import "../general_styles/variables.scss";
+
+.light {
+  background-color: #fff;
+}
+.body {
+  background-color: $background-color;
+  color: rgb(var(--foreground-rgb));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 10px;
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: unset;
+    color: unset;
+  }
+}
+
+.layout-header {
+  width: $max-content-width;
+}
+
+.main {
+  flex-grow: 1;
+  width: $max-content-width;
+}
+
+.layout-footer {
+  width: $max-content-width;
+}

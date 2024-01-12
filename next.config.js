@@ -1,4 +1,19 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const path = require("path");
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  webpack: (config, { defaultLoaders }) => {
+    config.resolve.modules.push(path.resolve("./src"));
+    return config;
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/",
+        destination: "/app/home",
+      },
+    ];
+  },
+};
+
+module.exports = nextConfig;

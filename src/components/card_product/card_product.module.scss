@@ -1,0 +1,31 @@
+.cardProduct {
+  background-color: #fff;
+  height: 300px;
+  width: 300px;
+  border: 2px solid #eeff00;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  span {
+    position: absolute;
+  }
+  img {
+    height: 100%;
+  }
+  p {
+    position: absolute;
+    color: #000000;
+    bottom: 0;
+    background-color: #fffa8d8f;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+  }
+  strong {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #10db9a;
+    font-size: 30px;
+  }
+}

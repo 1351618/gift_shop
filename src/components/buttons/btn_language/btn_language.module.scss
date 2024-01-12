@@ -1,0 +1,21 @@
+.btnLanguage {
+  select {
+    height: 24px;
+    width: 50px;
+    border-radius: 12px;
+    background-color: #f4f3f3;
+    cursor: pointer;
+    box-shadow: inset 1px -1px 2px #ffffff,
+      inset -1px 1px 4px rgba(0, 0, 0, 0.431372549);
+    text-align: center;
+    border: none;
+    -webkit-appearance: none; /* Для поддержки в различных браузерах */
+    -moz-appearance: none;
+    appearance: none;
+    text-transform: uppercase;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
