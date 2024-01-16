@@ -1,0 +1,29 @@
+@import "../../general_styles/variables.scss";
+.wind-log-reg {
+  height: 500px;
+  width: 500px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swith-log-reg {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 40px;
+  button {
+    width: 100%;
+  }
+}
+
+.wind-log {
+  display: flex;
+  flex-direction: column;
+}
+.wind-reg {
+  display: flex;
+  flex-direction: column;
+}

@@ -15,13 +15,12 @@ export default function Header() {
       <div className={styles["header__menu"]}>
         <Menu />
       </div>
-      <div>
+      <div className={styles["header__mini-consol"]}>
         <BtnLogin />
-      </div>
-
-      <div className={styles.posBtnThem}>
-        <BtnTheme />
-        <BtnLanguage />
+        <div className={styles["pos-btn-them"]}>
+          <BtnTheme />
+          <BtnLanguage />
+        </div>
       </div>
     </div>
   );

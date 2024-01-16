@@ -2,5 +2,19 @@
   "menu": {
     "home": "Σπίτι",
     "about": "Σχετικά με"
+  },
+  "homePage": {
+    "cardsAdvertising": "τμήμα με διαφημιστικές κάρτες",
+    "filtProductCards": "τμήμα με φίλτρα για κάρτες προϊόντων"
+  },
+  "filtration": {
+    "giftFriend": "δώρο για φίλο",
+    "birthdayGiftWoman": "δώρο γενεθλίων για γυναίκα",
+    "giftNewYear": "δώρο για το νέο έτος",
+    "giftGirl": "δώρο για κορίτσι",
+    "giftMan": "δώρο για έναν άντρα",
+    "giftSet": "σετ δώρου",
+    "NewYearGiftsChildren": "Πρωτοχρονιάτικα δώρα για παιδιά",
+    "giftMom": "δώρο για τη μαμά"
   }
 }

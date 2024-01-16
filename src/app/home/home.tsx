@@ -7,12 +7,16 @@ import Filtration from "@/components/filtration/filtration";
 import { fetchProducts } from "@/api/products";
 import { useEffect, useState } from "react";
 import { ProductTupes } from "@/types/productTypes";
+import { useSelector } from "react-redux";
+import type { RootState } from "@/redux-toolkit/store";
 
 // ! отрисовка рекламы
-const dataCardShares = [1, 2, 3, 4, 5, 6];
+const dataCardShares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
 export default function Home() {
   const [isDataCardProduct, setDataCardProduct] = useState<ProductTupes[]>([]);
+  const languague = useSelector((state: RootState) => state.languague.value);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -26,20 +30,26 @@ export default function Home() {
 
     fetchData();
   }, []);
-
+  const translations = require(`../../locales/${languague}.json`);
   return (
-    <div className={styles.homePage}>
-      <h1>секция с карточками рекламы </h1>
-      <section className={styles.sectCardShares}>
-        {dataCardShares.map((val) => (
-          <CardShares key={val} />
-        ))}
+    <div className={styles["home-page"]}>
+      <h1>{translations.homePage.cardsAdvertising}</h1>
+
+      <section className={styles["sect-card-shares"]}>
+        <div className={styles["sect-card-shares__slider"]}>
+          <div className={styles["sect-card-shares__list"]}>
+            {dataCardShares.map((val) => (
+              <CardShares key={val} />
+            ))}
+          </div>
+        </div>
       </section>
-      <section className={styles.sectFiltration}>
-        <h1>секция с фильтрами для карточек продуктов</h1>
+
+      <section className={styles["sect-filtration"]}>
+        <h1>{translations.homePage.filtProductCards}</h1>
         <Filtration />
       </section>
-      <section className={styles.sectCardProduct}>
+      <section className={styles["sect-card-product"]}>
         {isDataCardProduct.map((product) => (
           <CardProduct key={product.id} {...product} />
         ))}

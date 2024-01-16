@@ -28,14 +28,20 @@
 }
 
 .layout-header {
-  width: $max-content-width;
+  max-width: $max-content-width;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .main {
   flex-grow: 1;
-  width: $max-content-width;
+  max-width: $max-content-width;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .layout-footer {
-  width: $max-content-width;
+  max-width: $max-content-width;
+  width: 100%;
+  padding: 0 20px;
 }

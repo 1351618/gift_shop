@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import styles from "./btn_login.module.scss";
 import Link from "next/link";
+import WindLogReg from "@/components/wind_log_reg/wind_log_reg";
 
 const dataUser = {
   user: true,
@@ -12,10 +13,10 @@ export default function BtnLogin() {
   const [isModalLogin, setModalLogin] = useState(false);
 
   function interLogin() {
-    if (dataUser.user) {
+    if (!dataUser.user) {
       setModalLogin(true);
     } else {
-      window.location.href = "/about";
+      window.location.href = `/page_user/${1}`;
     }
   }
 
@@ -23,7 +24,10 @@ export default function BtnLogin() {
     setModalLogin(!isModalLogin);
   }
   return (
-    <div>
+    <div className={styles["btn-login"]}>
+      <Link href={`/page_user/${1}`}>root</Link>
+      <Link href={`/page_user/${2}`}>admin</Link>
+      <Link href={`/page_user/${3}`}>user</Link>
       <button onClick={interLogin}>user</button>
       <div
         onClick={reversisModalLogin}
@@ -31,7 +35,13 @@ export default function BtnLogin() {
           styles["fon-modal-wind"]
         }`}
       >
-        модуль со входом
+        <div
+          onClick={(event) => {
+            event.stopPropagation();
+          }}
+        >
+          <WindLogReg />
+        </div>
       </div>
     </div>
   );

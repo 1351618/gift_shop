@@ -1,6 +1,22 @@
 .hide {
   display: none !important;
 }
+.btn-login {
+  // height: 100%;
+  a {
+    padding-right: 10px;
+    gap: 10px;
+  }
+  button {
+    height: 50px;
+    // width: 50px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: inset 1px -1px 2px #ffffff,
+      inset -1px 1px 4px rgba(0, 0, 0, 0.431372549);
+    padding: 13px;
+  }
+}
 
 .fon-modal-wind {
   background-color: #00000076;
@@ -13,5 +29,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }

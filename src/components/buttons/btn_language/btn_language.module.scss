@@ -17,5 +17,14 @@
     &:focus {
       outline: none;
     }
+    option {
+      background-color: #f4f3f3;
+      color: #000000;
+      text-align: center;
+      padding: 3px;
+    }
+    option:checked {
+      background-color: #03b62d;
+    }
   }
 }

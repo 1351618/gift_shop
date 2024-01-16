@@ -1,5 +1,5 @@
 .header {
-  background-color: #f7f3be;
+  background-color: #00ff5f3b;
   padding: 10px;
   height: 100px;
   // position: relative;
@@ -7,7 +7,14 @@
   justify-content: space-between;
   align-items: center;
 }
-.posBtnThem {
+
+.header__mini-consol {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.pos-btn-them {
   display: flex;
   flex-direction: column;
   gap: 4px;
