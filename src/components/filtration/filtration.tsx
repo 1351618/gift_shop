@@ -8,7 +8,7 @@ const dataFiltr = ["новогодние"];
 export default function Filtration() {
   const languague = useSelector((state: RootState) => state.languague.value);
   const translations = require(`../../locales/${languague}.json`);
-  console.log(translations);
+  // console.log(translations);
   const filtrationKeys = Object.keys(translations.filtration);
   return (
     <div className={styles.filtration}>

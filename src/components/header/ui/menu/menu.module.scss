@@ -1,8 +1,10 @@
 @import "../../../../general_styles/fonts.scss";
+@import "../../../../general_styles/variables.scss";
 
 .menu {
   display: flex;
   gap: 10px;
+
   a {
     font-size: 20px;
     text-transform: uppercase;
@@ -10,6 +12,17 @@
     &.activ {
       color: #00cbcb;
       text-shadow: 0px 0px 2px #00cbcb;
+    }
+  }
+}
+
+@media (max-width: $mobile-screen-width) {
+  .menu {
+    gap: 1px;
+    flex-direction: column;
+
+    a {
+      font-size: 20px;
     }
   }
 }
