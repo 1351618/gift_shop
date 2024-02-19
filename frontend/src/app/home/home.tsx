@@ -9,9 +9,9 @@ import { useEffect, useState } from "react";
 import { ProductTupes } from "@/types/productTypes";
 import { useSelector } from "react-redux";
 import type { RootState } from "@/redux-toolkit/store";
+import Slider from "@/components/slider/slider";
 
 // ! отрисовка рекламы
-const dataCardShares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
 export default function Home() {
   const [isDataCardProduct, setDataCardProduct] = useState<ProductTupes[]>([]);
@@ -33,16 +33,10 @@ export default function Home() {
   const translations = require(`../../locales/${languague}.json`);
   return (
     <div className={styles["home-page"]}>
-      <h1>{translations.homePage.cardsAdvertising}</h1>
+      {/* <h1>{translations.homePage.cardsAdvertising}</h1> */}
 
-      <section className={styles["sect-card-shares"]}>
-        <div className={styles["sect-card-shares__slider"]}>
-          <div className={styles["sect-card-shares__list"]}>
-            {dataCardShares.map((val) => (
-              <CardShares key={val} />
-            ))}
-          </div>
-        </div>
+      <section className={styles["sect-card-slider"]}>
+        <Slider />
       </section>
 
       <section className={styles["sect-filtration"]}>

@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   align-items: center;
-  gap: 10px;
+  // gap: 10px;
 
   * {
     margin: 0;
@@ -27,6 +27,9 @@
   a {
     text-decoration: unset;
     color: unset;
+  }
+  button {
+    cursor: pointer;
   }
 }
 

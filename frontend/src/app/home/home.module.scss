@@ -10,48 +10,15 @@
   }
 }
 
-.sect-card-shares {
+.sect-card-slider {
   width: 100%;
   // display: flex;
   // flex-direction: row;
   overflow: hidden;
   // gap: 5px;
 }
-.sect-card-shares__slider {
-}
-.sect-card-shares__list {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  gap: 0.5%;
-  overflow-x: auto;
-  scrollbar-width: none; /* Скрыть полосу прокрутки Firefox */
-  grid-auto-flow: column;
-  padding: 0 0 8px 0;
 
-  &::-webkit-scrollbar {
-    // display: none;
-    // width: 0; /* Скрыть полосу прокрутки в Chrome и Safari */
-  }
-  /* Стили для полосы прокрутки */
-  &::-webkit-scrollbar {
-    width: 8px; /* Ширина полосы прокрутки */
-    height: 15px;
-  }
 
-  &::-webkit-scrollbar-track {
-    background: #1eb9c791; /* Цвет фона полосы прокрутки */
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: #0bc314b7; /* Цвет полосы прокрутки */
-    border-radius: 7px;
-  }
-
-  &::-webkit-scrollbar-thumb:hover {
-    background: #0055ff84; /* Цвет полосы прокрутки при наведении */
-  }
-}
 
 // .sect-filtration {
 // }
