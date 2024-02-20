@@ -1,7 +1,12 @@
 {
   "menu": {
     "home": "Home",
-    "about": "About"
+    "about": "About",
+    "giftBaskets": "gift baskets",
+    "candles": "candles",
+    "3dSouvenirs": "3D souvenirs",
+    "picturesByNumbers": "pictures by numbers",
+    "miniPlants": "mini plants"
   },
   "homePage": {
     "cardsAdvertising": "section with advertising cards",

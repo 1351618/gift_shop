@@ -8,10 +8,22 @@ export default function CardProduct({ id, ...rest }: ProductTupes) {
   return (
     <Link href={`/products/${id}`}>
       <div className={styles["cardProduct"]}>
-        <span>{id}</span>
-        <img src={rest.foto} alt="" />
-        <p>{rest.name}</p>
-        <strong>{rest.price}</strong>
+        {/* <span>{id}</span> */}
+        <span>NEW</span>
+        <img className={styles["cardProduct__img"]} src={rest.foto} alt="" />
+        <div className={styles["cardProduct__info"]}>
+          <p>{rest.name}</p>
+          <p>описание описание описание описание</p>
+          <div>
+            <p>tegi</p>
+            <p>tegi</p>
+            <p>tegi</p>
+            <p>tegi</p>
+            <p>tegi</p>
+          </div>
+          <strong>{rest.price}</strong>
+          <button>в корзину</button>
+        </div>
       </div>
     </Link>
   );

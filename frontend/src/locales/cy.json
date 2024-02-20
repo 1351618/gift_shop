@@ -1,7 +1,12 @@
 {
   "menu": {
     "home": "Σπίτι",
-    "about": "Σχετικά με"
+    "about": "Σχετικά με",
+    "giftBaskets": "καλάθια δώρων",
+    "candles": "κεριά",
+    "3dSouvenirs": "3D Souvenirs",
+    "picturesByNumbers": "pictures by numbers",
+    "miniPlants": "μίνι φυτά"
   },
   "homePage": {
     "cardsAdvertising": "τμήμα με διαφημιστικές κάρτες",

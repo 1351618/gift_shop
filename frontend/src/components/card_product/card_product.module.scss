@@ -1,31 +1,50 @@
 .cardProduct {
   background-color: #fff;
-  height: 300px;
-  width: 300px;
-  border: 2px solid #eeff00;
-  border-radius: 10px;
+  height: 400px;
+  width: 250px;
+  // border: 2px solid #eeff00;
+  // border-radius: 10px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
   span {
     position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: #31d731;
+    padding: 4px;
+    color: #fff;
   }
-  img {
-    height: 100%;
+}
+
+.cardProduct__img {
+  height: 50%;
+  object-fit: cover;
+}
+
+.cardProduct__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50%;
+  text-align: center;
+  div {
+    display: flex;
+    gap: 4px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    p {
+      border: 1px solid #c8942b;
+      padding: 0 5px;
+    }
   }
-  p {
-    position: absolute;
-    color: #000000;
-    bottom: 0;
-    background-color: #fffa8d8f;
-    width: 100%;
-    text-align: center;
-    height: 40px;
-  }
-  strong {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: #10db9a;
-    font-size: 30px;
+  button {
+    border: 1px solid #c8942b;
+    padding: 12px;
+    background-color: #fff;
   }
 }

@@ -1,7 +1,12 @@
 {
   "menu": {
     "home": "Главная",
-    "about": "О нас"
+    "about": "О нас",
+    "giftBaskets": "подарочные наборы",
+    "candles": "свечи",
+    "souvenirs3d": "3D сувениры",
+    "picturesByNumbers": "картинки по номерам",
+    "miniPlants": "мини растения"
   },
   "homePage": {
     "cardsAdvertising": "секция с карточками рекламы",

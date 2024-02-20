@@ -4,7 +4,7 @@ import Link from "next/link";
 import BtnLanguage from "../buttons/btn_language/btn_language";
 import BtnTheme from "../buttons/btn_theme/btn_theme";
 import styles from "./header.module.scss";
-import Menu from "./ui/menu/menu";
+import Menu from "../menu/menu";
 import BtnLogin from "../buttons/btn_login/btn_login";
 import { use, useEffect, useState } from "react";
 import BtnBurgerMenu from "../buttons/btn_burger_menu/btn_burger_menu";

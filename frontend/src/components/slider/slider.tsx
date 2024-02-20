@@ -54,17 +54,16 @@ export default function Slider() {
             onClick={() => sliderSelect(-1)}
           />
         </button>
+
         <div className={styles["slider__image-container"]}>
-          <div className={styles["slider__images"]}>
-            {isDataCardProduct.map((valImg, index) => (
-              <img
-                className={index === isActiveImg ? styles["activ"] : ""}
-                src={valImg.foto}
-                alt=""
-                key={index}
-              />
-            ))}
-          </div>
+          {isDataCardProduct.map((valImg, index) => (
+            <img
+              className={index === isActiveImg ? styles["activ"] : ""}
+              src={valImg.foto}
+              alt=""
+              key={index}
+            />
+          ))}
         </div>
 
         <button>
