@@ -9,6 +9,7 @@ import { ProductTupes } from "@/types/productTypes";
 import { useSelector } from "react-redux";
 import type { RootState } from "@/redux-toolkit/store";
 import Slider from "@/components/slider/slider";
+import Window3d from "@/components/window_3d/window_3d";
 
 export default function Home() {
   const [isDataCardProduct, setDataCardProduct] = useState<ProductTupes[]>([]);
@@ -45,6 +46,7 @@ export default function Home() {
           <CardProduct key={product.id} {...product} />
         ))}
       </section>
+      <Window3d />
     </div>
   );
 }
